@@ -1,5 +1,5 @@
 <?php
-namespace vm;
+namespace Vm;
 
 class Log extends \core\LogAbstract implements \core\LogInterface {
 	public static function log($str) {
