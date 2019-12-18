@@ -10,7 +10,7 @@ include_once 'vm/Log.php';
 
 $arr=array();
 
-//vm\Log::log('Version '.file_get_contents('./version'));
+vm\Log::log('Version '.file_get_contents('./version'));
 
 $arr[] = readline("a= ");
 $arr[] = readline("b= ");
