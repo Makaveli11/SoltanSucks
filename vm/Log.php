@@ -1,6 +1,6 @@
 <?php
 namespace Vm;
-
+use \DateTime;
 class Log extends \core\LogAbstract implements \core\LogInterface {
 	public static function log($str) {
 		self::Instance()->log[] = $str;

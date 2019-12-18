@@ -10,14 +10,14 @@ include_once 'vm/Log.php';
 
 $arr=array();
 
-vm\Log::log('Version '.file_get_contents('./version'));
+//vm\Log::log('Version '.file_get_contents('./version'));
 
 $arr[] = readline("a= ");
 $arr[] = readline("b= ");
 $arr[] = readline("c= ");
 
 try {
-    $solver = new vm\KvadrUr();
+    $solver = new vm\Square();
 	$roots = $solver->solve($arr[0], $arr[1], $arr[2]);
 
     vm\Log::log("roots: " . implode(" , ", $roots));
